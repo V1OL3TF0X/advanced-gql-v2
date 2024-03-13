@@ -6,14 +6,13 @@
   "license": "MIT",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js --ignore 'src/db/db.json'",
+    "dev": "node --watch src/index.js --watch-ignore 'src/db/db.json node_modules'",
     "test": "jest tests"
   },
   "devDependencies": {
     "apollo-server-testing": "^2.9.6",
     "jest": "^24.9.0",
-    "mdx-deck": "^3.0.13",
-    "nodemon": "^1.19.4"
+    "mdx-deck": "^3.0.13"
   },
   "dependencies": {
     "@mdx-deck/themes": "^3.0.8",

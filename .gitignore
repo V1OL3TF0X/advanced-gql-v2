@@ -3,3 +3,6 @@ node_modules
 *.error
 dist
 DS_Store
+
+# don't upload data from json "database"
+/src/db/db.json
